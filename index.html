@@ -9,27 +9,64 @@
          body {
         margin: 10;
       }
+      * {
+         box-sizing: border-box;
+      }
+      .tou {
+        background-color: aliceblue;
+        padding: 30px;
+        text-align: center;
+        font-size: 10px;
+      }
+      .dao {
+        overflow: hidden;
+        background-color: black;
+      }
+      .dao a{
+        float: left;
+        display: block;
+        color: rgb(235, 237, 227);
+        text-align: center;
+        padding: 8px 10px;
+        text-decoration: none;
+      }
+      .dao a:hover{
+        background-color: rgb(174, 226, 226);
+        color: rgb(54, 38, 38);
+      }
+      .neirong {
+        float: left;
+        width: 75%;
+        padding-left: 10px;
+      }
+      .mokuai {
+        float: left;
+        width: 25%;
+        background-color: aliceblue;
+        padding-left: 10px;
+        margin-top: 10px;
+      }
+      .kuai {
+        background-color: rgb(231, 231, 231);
+        width: 90%;
+      }
+
     </style>
+    
 </head>
 <body>
     <!--主题栏-->
-    <div style="
-    text-align: center;
-    padding: 20px;
+    <div class="tou"
     ">
 <h1>欢迎来到萤火虫的空间</h1>
+   </div>
    
     <!--左侧导航框-->
-    <div style="
-    float: left;
-    height: 100px;
-    text-align: center;
-    max-width: 20%;
-     font-size: 12px;">
+    <div class="dao">
      <!--收藏夹-->
      <div> 
-        <a href="scj.html"><img src="300.png" alt="收藏夹" width="40px" height="30px"></img></a>
-  </div>
+    <a href="scj.html"><img src="300.png" alt="收藏夹" width="40px" height="30px"></img></a>
+     </div>
      <!--第一个网页-->
     <div>
     <a href="yhc.html"><img src="http://img95.699pic.com/xsj/17/nc/wg.jpg!/fh/300" alt="第一个网页" width="35px" height="35px"></img></a>
@@ -38,30 +75,26 @@
     </div>
     
     <!--中间内容区-->
-    <div style="
-    max-width: 60%;
-    margin: auto;
-    background-color: aqua;">
-    <h1 style="text-align: center;">biaoti</h1>
-    <p style="text-align: left;">neirong<br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <div class="neirong">
+        <div class="kuai">
+    <h1 style="text-align: center;">内容</h1>
+    <p style="text-align: left;">文章或者图片<br>
     <br>
     <br>
     </p>
-
+</div>
     </div>
     <!--右侧区域-->
-    <div></div>
-</div>
+    <div class="mokuai" >
+        <div id="内容" class="kuai"><h1 style="font-size: 20px; text-align:center">导航</h1></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
     <!--底部-->
     <div></div>
  
